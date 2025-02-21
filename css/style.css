@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 50px;
+    background: #f0f0f0;
+    text-align: center;
+}
+/* Навігація поверх Hero */
+.navbar {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 15px 0;
+    z-index: 100; 
+    font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-butt:active{
+    color: #45a049; /* Колір кнопки при натисканні */
+}
+/* Hero секція */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 60px; 
+    font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    font-size: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.cytat{
+    font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  color: lightblue;
+}
