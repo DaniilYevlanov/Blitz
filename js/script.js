@@ -44,5 +44,5 @@ function createChart() {
     });
 }
 
-// Вызываем функцию создания графика
 createChart();
+
