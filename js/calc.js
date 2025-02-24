@@ -7,7 +7,7 @@ counters.forEach(counter => {
         const increment = target / speed;
         if (count < target) {
             counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCount, 20);
+            setTimeout(updateCount, 100);
         } else {
             counter.innerText = target;
         }
