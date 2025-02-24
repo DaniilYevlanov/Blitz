@@ -86,3 +86,73 @@
   font-optical-sizing: auto;
   color: lightblue;
 }
+/*why-important*/
+.why-important {
+
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+.h2-reason{
+   padding-bottom: 60px;
+}
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.reason {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*stats*/
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+.stat {
+    font-size: 24px;
+}
+/*calculate*/
+#co2-calculator {
+    background-color: #f0f8ff;
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}

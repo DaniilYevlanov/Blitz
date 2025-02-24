@@ -25,7 +25,7 @@
     
     <section class="hero">
         <video class="hero-video" autoplay muted loop playsinline>
-            <source src="./images/18402210-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            <source src="./images/background.mp4" type="video/mp4">
             Ваш браузер не підтримує відео.
         </video>
         <div class="hero-content">
@@ -35,11 +35,61 @@
         </div>
     </section>
 
-    <section class="content">
-        <h2>Що далі?</h2>
-        <p>Розвиток зеленої енергетики може змінити світ!</p>
-    </section>    
-<section></section>
-<section></section>
+    <section id="why-important" class="why-important">
+        <h2 class="h2-reason">Чому це важливо?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Захист довкілля</h3>
+                <p>ВДЕ не забруднюють атмосферу та зменшують глобальне потепління.</p>
+            </div>
+            <div class="reason">
+                <h3>Енергетична незалежність</h3>
+                <p>Країни стають менш залежними від імпорту палива.</p>
+            </div>
+            <div class="reason">
+                <h3>Доступність та економія</h3>
+                <p>Відновлювані джерела стають дешевшими у довгостроковій перспективі.</p>
+            </div>
+            <div class="reason">
+                <h3>Робочі місця</h3>
+                <p>Розвиток "зеленої" енергетики створює нові можливості.</p>
+            </div>
+            <div class="reason">
+                <h3>Доступність для всіх</h3>
+                <p>Сонячні панелі можна встановити навіть вдома.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h3><span class="counter" data-target="70">0</span>%</h3>
+            <p>електроенергії в Данії з вітру</p>
+        </div>
+        <div class="stat">
+            <h3><span class="counter" data-target="90">0</span>%</h3>
+            <p>зменшення викидів CO₂ до 2030 року</p>
+        </div>
+    </section>
+
+    <section id="co2-calculator">
+        <div class="container">
+            <h2>Калькулятор скорочення CO₂</h2>
+            <p>Дізнайтеся, скільки CO₂ можна скоротити, використовуючи ВДЕ.</p>
+    
+            <label for="electricity">Ваше щомісячне споживання електроенергії (кВт·год):</label>
+            <input type="number" id="electricity" placeholder="Наприклад, 300" min="1">
+    
+            <label for="renewable-percent">Який відсоток електроенергії ви хочете замінити на ВДЕ?</label>
+            <input type="number" id="renewable-percent" placeholder="Наприклад, 50" min="1" max="100">
+    
+            <button onclick="calculateCO2()">Розрахувати</button>
+    
+            <h3>Результат:</h3>
+            <p id="result">Тут з'явиться кількість зекономленого CO₂.</p>
+        </div>
+    </section>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/calc.js"></script>
 </body>
 </html>
