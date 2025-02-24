@@ -17,7 +17,7 @@ function calculateCO2() {
     let resultElement = document.getElementById("result");
     resultElement.style.opacity = "0"; 
     setTimeout(() => {
-        resultElement.innerHTML = `✅ Ви можете скоротити приблизно <b>${savedCO2.toFixed(2)}</b> кг CO₂ на місяць!`;
+        resultElement.innerHTML = `Ви можете скоротити приблизно <b>${savedCO2.toFixed(2)}</b> кг CO₂ на місяць!`;
         resultElement.style.opacity = "1"; 
     }, 300);
 }

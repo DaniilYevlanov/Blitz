@@ -18,8 +18,8 @@
     background: rgba(0, 0, 0, 0.6); 
     padding: 15px 0;
     z-index: 100; 
-    font-family: "Raleway", serif;
-  font-optical-sizing: auto;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
 }
 
 .navbar ul {
@@ -55,8 +55,8 @@
     text-align: center;
     color: white;
     padding-top: 60px; 
-    font-family: "Raleway", serif;
-  font-optical-sizing: auto;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
 }
 
 .hero-video {
@@ -82,18 +82,20 @@
     border-radius: 10px;
 }
 .cytat{
-    font-family: "Caveat", serif;
-  font-optical-sizing: auto;
-  color: lightblue;
+    font-family: "Arsenal SC", serif;
+    font-weight: 400;
+  color: #29bb36;
 }
 /*why-important*/
 .why-important {
-
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
     text-align: center;
     padding: 50px 20px;
     background: #f4f4f4;
 }
 .h2-reason{
+    
    padding-bottom: 60px;
 }
 .reasons {
@@ -112,6 +114,8 @@
 }
 /*stats*/
 .stats {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -123,9 +127,20 @@
 .stat {
     font-size: 24px;
 }
+/*grafs-2*/
+.main-container{
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+        gap: 20px; 
+        max-width: 1200px;
+        margin: auto;
+        height: 200px;
+}
 /*calculate*/
 #co2-calculator {
-    background-color: #f0f8ff;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
     padding: 40px;
     text-align: center;
 }
@@ -155,4 +170,20 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+/*graf*/
+.container {
+    width: 80%;
+    max-width: 800px; 
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+    max-height: 400px; 
 }

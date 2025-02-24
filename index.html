@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <title>Мрії</title>
 </head>
 <body>
@@ -63,16 +66,16 @@
 
     <section class="stats">
         <div class="stat">
-            <h3><span class="counter" data-target="70">0</span>%</h3>
-            <p>електроенергії в Данії з вітру</p>
+            <h3><span class="counter" data-target="43.2">0</span>%</h3>
+            <p>електроенергії з вітру в світі</p>
         </div>
         <div class="stat">
             <h3><span class="counter" data-target="90">0</span>%</h3>
-            <p>зменшення викидів CO₂ до 2030 року</p>
+            <p>зменшення викидів CO₂ до 2050 року</p>
         </div>
     </section>
 
-    <section id="co2-calculator">
+    <section class="main-container" id="co2-calculator">
         <div class="container">
             <h2>Калькулятор скорочення CO₂</h2>
             <p>Дізнайтеся, скільки CO₂ можна скоротити, використовуючи ВДЕ.</p>
@@ -88,7 +91,14 @@
             <h3>Результат:</h3>
             <p id="result">Тут з'явиться кількість зекономленого CO₂.</p>
         </div>
+        <div class="container">
+            <h2>Зростання використання ВДЕ у світі</h2>
+            <canvas id="energyChart"></canvas>
+        </div> 
     </section>
+    <section>
+
+    <script src="./js/script.js"></script>
     <script src="./js/calculator.js"></script>
     <script src="./js/calc.js"></script>
 </body>
