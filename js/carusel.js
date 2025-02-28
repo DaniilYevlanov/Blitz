@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         indicatorsContainer.appendChild(button);
     }
+
     const indicators = document.querySelectorAll(".carousel-indicators button");
 
     function updateCarousel() {
         const offset = -index * 100;
-        track.style.transform = translateX`(${offset}%)`;
+        track.style.transform = `translateX(${offset}%)`;
 
         // Оновлення індикаторів
         indicators.forEach((btn, i) => {

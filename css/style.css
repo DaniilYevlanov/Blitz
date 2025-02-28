@@ -290,6 +290,7 @@ canvas {
     }
 }
 /*carusel*/
+
 .renewable-energy {
     background-color: #f5f5f5;
     padding: 60px 20px;
@@ -302,7 +303,7 @@ canvas {
     margin-bottom: 20px;
 }
 
-/* Обгортка для каруселі */
+/* Обгортка каруселі */
 .carousel-wrapper {
     display: flex;
     align-items: center;
@@ -342,10 +343,12 @@ canvas {
     object-fit: cover;
 }
 
+/* Текст */
 .carousel-item h3 {
     font-size: 22px;
     margin: 10px 0;
     color: #333;
+    font-weight: bold;
 }
 
 .carousel-item p {
@@ -353,33 +356,68 @@ canvas {
     color: #666;
 }
 
-/* Кнопки каруселі */
+/* Футуристичні кнопки каруселі */
 .prev, .next {
-    background-color: rgba(76, 175, 80, 0.8);
+    background: linear-gradient(45deg, #00c853, #76ff03);
     color: white;
     border: none;
-    padding: 15px;
+    padding: 18px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 26px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 0 12px rgba(0, 200, 83, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
 
+/* Ефект світіння при наведенні */
 .prev:hover, .next:hover {
-    background-color: rgba(76, 175, 80, 1);
-    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.5);
+    background: linear-gradient(45deg, #00e676, #b2ff59);
+    box-shadow: 0 0 20px rgba(0, 200, 83, 0.9);
+    transform: translateY(-50%) scale(1.1);
 }
 
+/* Анімація натискання */
+.prev:active, .next:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+/* Розташування кнопок */
 .prev {
-    left: -50px;
+    left: 20px;
 }
 
 .next {
-    right: -50px;
+    right: 20px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: none;
+    background: #c8e6c9;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.carousel-indicators button.active {
+    background: #00c853;
+    transform: scale(1.3);
 }
 
 /* Адаптивність */
@@ -389,10 +427,13 @@ canvas {
     }
 
     .prev, .next {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 22px;
+        padding: 14px;
+        width: 45px;
+        height: 45px;
     }
 }
+
 /*question*/
 .contact {
     font-family: "Roboto Slab", serif;
